@@ -1,0 +1,15 @@
+.anticon-right {
+  svg {
+    stroke: black;
+    stroke-width: 100px;
+  }
+}
+
+.content-modal:hover {
+  .anticon-right {
+    svg {
+      stroke: white;
+      stroke-width: 100px;
+    }
+  }
+}

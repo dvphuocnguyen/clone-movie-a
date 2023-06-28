@@ -1,0 +1,44 @@
+.scroll-inner {
+  &::-webkit-scrollbar {
+    width: 100px;
+  }
+  &::-webkit-scrollbar:horizontal {
+    height: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparentize(white, 0.7);
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: transparentize(#dbdbdb, 0);
+  }
+}
+
+.fade {
+  transition: all 0.2s ease-in-out;
+  right: 0px;
+  top: 0px;
+  display: block;
+
+  width: 50px;
+  height: 100%;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.9)
+  );
+}
+.visible {
+  transition: all 0.2s ease-in-out;
+}
+.hidden {
+  transition: all 0.2s ease-in-out;
+}
+.underSelecter {
+  border-bottom: 4px solid black;
+}
+
+.play {
+  filter: invert(1);
+}

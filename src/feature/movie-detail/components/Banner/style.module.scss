@@ -1,0 +1,33 @@
+.custom_bg {
+  background: linear-gradient(
+    to bottom right,
+    rgb(53, 52, 52),
+    rgba(63, 62, 62, 0.84)
+  );
+}
+.coatings {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  z-index: 100;
+}
+
+.play {
+  filter: invert(1);
+}
+
+.sub-dropdown:hover > .sub-dropdown-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.percent-circle:hover > .ant-progress-inner {
+  scale: 1.1;
+  transition: all 0.2s ease-in-out;
+}
